@@ -3,56 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitación de Cumpleaños</title>
+    <title>Biografía de Yisegumi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Roboto', sans-serif;
+            background-color: #D36C90;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            color: #333;
         }
-        .container {
+        header, footer {
+            background-color: #D36C90;
+            color: #fff;
             text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+        }
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 500px;
-            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .header {
+        .biografia {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .biografia img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .biografia h2 {
             font-size: 2em;
-            color: #ff69b4;
-            margin-bottom: 20px;
+            margin: 20px 0 10px;
+            color: #D36C90;
         }
-        .details {
+        .biografia p {
             font-size: 1.2em;
-            color: #333;
-            margin-bottom: 20px;
+            line-height: 1.6;
+            margin: 10px 0;
         }
-        .footer {
+        .galeria {
+            text-align: center;
+        }
+        .galeria h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #D36C90;
+        }
+        .galeria-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .galeria img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
             font-size: 1em;
-            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">¡Estás Invitado a una Fiesta de Cumpleaños!</div>
-        <div class="details">
-            <p><strong>Nombre del Cumpleañero:</strong> Candela</p>
-            <p><strong>Fecha:</strong> 25/08/2024</p>
-            <p><strong>Hora:</strong> 17:00hs</p>
-            <p><strong>Lugar:</strong> Pasco 2733 </p>
-        </div>
-        <div class="footer">
-            <p>¡Esperamos verte allí!</p>
-            <p>Por favor confirma tu asistencia hacé</p> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZGSGeC2d4X8iOhx3-_KRHJ-0rMlne1fQr9mYlVeauF3FgKA/viewform?usp=sf_link">Click acá</a>
-        </div>
-    </div>
+    <header>
+        <h1>Biografía de Yisegumi</h1>
+    </header>
+    <main>
+        <section class="biografia">
+            <img src="https://scontent.faep29-2.fna.fbcdn.net/v/t39.30808-6/293463419_10222963745942741_1438261148509431240_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Mid-R554K7oQ7kNvgG6WH74&_nc_ht=scontent.faep29-2.fna&oh=00_AYANHClK9xLPTTEP_N5XrjatRn2Tpzmb7uHIe8YSE_acWg&oe=66B5A883" alt="Foto para nada profesional">
+            <h2>Yise Cabrera</h2>
+            <p>Yise Cabrera es una talentosa tejedora de muñecos con más de 8 años de experiencia en la creación de hermosas piezas artesanales.</p>
+            <p>A lo largo de los años, Yise ha perfeccionado su técnica y ha desarrollado su propio estilo único. Cada uno de sus muñecos es hecho a mano con amor y dedicación, utilizando solo los mejores materiales. Sus creaciones han sido reconocidas a nivel nacional e internacional, y han llevado alegría a innumerables hogares.</p>
+        </section>
+        <section class="galeria">
+            <h2>Galería de Ejemplos</h2>
+            <div class="galeria-container">
+                <img src="https://scontent.faep29-1.fna.fbcdn.net/v/t39.30808-6/454006371_1208843896946562_4177081482910735566_n.jpg?stp=dst-jpg_p480x480&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFNI-eiW-bp9UrpQX1WjjjenmfGIjVVi8-eZ8YiNVWLzwxg9HLszf9zKppRpBRT6lKDwArkxDOFFQ_Rg3VkAC-v&_nc_ohc=aqXmNGaGmCUQ7kNvgEftLW4&_nc_ht=scontent.faep29-1.fna&oh=00_AYDkGp0eufYvLHDH3Bw5_TpaJw5GKt1ViA_M4DrmC_T9KA&oe=66B5734C" alt="Muñeco 1">
+                <img src="https://scontent.faep29-1.fna.fbcdn.net/v/t39.30808-6/453875823_1208843923613226_5451004836940359227_n.jpg?stp=dst-jpg_p552x414&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFrSmrfOmqE1SVeC95DFHLjRqHxWQcQvYxGofFZBxC9jArQaIBY1GUi1CR68rLY6y1IwmP_tuhzL_4idS7d02fJ&_nc_ohc=X4ubD4jClYYQ7kNvgEurGta&_nc_ht=scontent.faep29-1.fna&oh=00_AYA2in47UcDo6GPEFYUvzKh3u5ew3wFGGYNLomOtyCt7cw&oe=66B5861C" alt="Muñeco 2">
+                <img src="https://scontent.faep29-2.fna.fbcdn.net/v/t39.30808-6/454234214_1208843913613227_7404353903695289863_n.jpg?stp=dst-jpg_p552x414&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHSGcCynnAf4jyELPMDKkHXBCD_VZwYAIgEIP9VnBgAiO3DAEtamdCImi2uP-SqY_XSBHHtQnY8BIqPA6RmEYqq&_nc_ohc=xgGqfSLDYJ4Q7kNvgFjJRBa&_nc_ht=scontent.faep29-2.fna&oh=00_AYBGqMMGjHqNm2FmxfSdl6zzt4DrowPoYqU1L6y8FPzdLw&oe=66B57BEB" alt="Muñeco 3">
+                <img src="https://scontent.faep29-1.fna.fbcdn.net/v/t39.30808-6/454233831_1208843873613231_4220681063467146128_n.jpg?stp=dst-jpg_s600x600&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFtmfefT9dsphNoHFu1WZIKUd_61GtMaBpR3_rUa0xoGgcOc9tam_8f1TH35dIjWY2k60jAmIgOs9ikksItMBUj&_nc_ohc=Boca1eqfs3kQ7kNvgEvFNg7&_nc_ht=scontent.faep29-1.fna&oh=00_AYDbuUaNsOML3b-7Mjng7UwnBTNP2QiiMwMzm6Bhwrxe4g&oe=66B57E43" alt="Muñeco 4">
+                
+                <p>¿Querés contactarte con esta tejedora profesional y comprar un muñeco?</p>
+                <h4><a href="https://www.instagram.com/yisegumi?igsh=YzljYTk1ODg3Zg==">¡Hacé click acá!</a></h4>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gabriel Cabrera  - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
